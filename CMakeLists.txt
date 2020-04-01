@@ -1,6 +1,6 @@
 # Main CMake file for compiling the examples and tests.
 #
-# Copyright (c) 2020 Federico Milano
+# Copyright (c) 2020 Federico E. Milano
 #
 # Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt
 # or copy at http://opensource.org/licenses/MIT) 
@@ -37,11 +37,12 @@ set(SORTING_ALGORITHMS_INC
 )
 source_group(inc FILES ${SORTING_ALGORITHMS_INC})
 
+# TODO
 # list of test files
 #set(SORTING_ALGORITHMS_TESTS
 # tests/sorting_tests.cpp
 #)
-source_group(tests FILES ${SORTING_ALGORITHMS_TESTS})
+#source_group(tests FILES ${SORTING_ALGORITHMS_TESTS})
 
 # list of example files
 set(SORTING_ALGORITHMS_EXAMPLES
@@ -59,6 +60,4 @@ source_group(doc FILES ${SORTING_ALGORITHMS_DOC})
 # All includes are relative to the "include" directory 
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
-
-add_executable(shared_ptr_example1 ${SORTING_ALGORITHMS_EXAMPLES} ${SORTING_ALGORITHMS_INC})
-
+add_executable(sorting_example1 ${SORTING_ALGORITHMS_EXAMPLES} ${SORTING_ALGORITHMS_INC})
