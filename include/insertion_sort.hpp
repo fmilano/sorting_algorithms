@@ -28,6 +28,8 @@ void insertion_sort(bidirIt first, bidirIt last) {
     auto prev = i;
     while (j != first) {
       --prev;
+      // This comparison could go in the while
+      // if we were working with random iterators.
       if (!(*j < *prev))
         break;
 
