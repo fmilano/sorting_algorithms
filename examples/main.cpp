@@ -13,6 +13,8 @@
 #include <list>
 
 #include "insertion_sort.hpp"
+#include "merge_sort.hpp"
+
 
 // C++ template to print vector container elements
 template <typename T>
@@ -56,6 +58,7 @@ int main(void)
   insertion_sort(begin(vecDouble), end(vecDouble));
   std::cout << "after insertion sort " << vecDouble << std::endl;
 
+  merge_sort(begin(vecInt), end(vecInt));
 
   return 0;
 }

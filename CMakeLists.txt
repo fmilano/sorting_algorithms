@@ -34,6 +34,7 @@ endif (MSVC)
 # list of header files
 set(SORTING_ALGORITHMS_INC
  ${PROJECT_SOURCE_DIR}/include/insertion_sort.hpp
+ ${PROJECT_SOURCE_DIR}/include/merge_sort.hpp
 )
 source_group(inc FILES ${SORTING_ALGORITHMS_INC})
 
