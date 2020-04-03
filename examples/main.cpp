@@ -53,12 +53,15 @@ int main(void)
   insertion_sort(begin(vecInt), end(vecInt));
   std::cout << "after insertion sort " << vecInt << std::endl << std::endl;
 
-  std::list<double> vecDouble{ 4.5, 2.6, 1.8, 8.3, 5.7, 1.22, 9.1 };
-  std::cout << "non sorted list " << vecDouble << std::endl;
-  insertion_sort(begin(vecDouble), end(vecDouble));
-  std::cout << "after insertion sort " << vecDouble << std::endl;
+  std::list<double> lstDouble{ 4.5, 2.6, 1.8, 8.3, 5.7, 1.22, 9.1 };
+  std::cout << "non sorted list " << lstDouble << std::endl;
+  insertion_sort(begin(lstDouble), end(lstDouble));
+  std::cout << "after insertion sort " << lstDouble << std::endl << std::endl;
 
-  merge_sort(begin(vecInt), end(vecInt));
+  std::vector<int> vecIntMerge{ 5, 6, 8, 3, 7, 22, 1 };
+  std::cout << "non sorted vector " << vecIntMerge << std::endl;
+  merge_sort(begin(vecIntMerge), end(vecIntMerge));
+  std::cout << "after merge sort " << vecIntMerge << std::endl << std::endl;
 
   return 0;
 }
